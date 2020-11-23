@@ -1,0 +1,2 @@
+inital stack of items: check for minimum support condition
+for prefix {ba}: intersection of b and a and then use the summation

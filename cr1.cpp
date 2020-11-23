@@ -26,7 +26,11 @@ int main(){
 		{}
 	};
 
+
+
 	for(auto itr=m.begin(); itr != m.end(); itr++){
+		int x=(itr->second).size();
+		cout<<" ";
 		cout<<criteriaRatioOne(itr->first, itr->second);
 	}
 	
