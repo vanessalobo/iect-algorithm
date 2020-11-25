@@ -2,8 +2,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool criteriaRatioTwo(string p, vector<set<int> > v, int N) {
+bool criteriaRatioTwo(string p, vector<set<int> > v) {
 	double S_P=0;
+	int N=v.size()-1;
 	for(int i=1; i<=N; i++){
 		S_P += v[i].size();
 	}
@@ -33,23 +34,3 @@ bool criteriaRatioTwo(string p, vector<set<int> > v, int N) {
 
 }
 
-int main(){
-
-
-	unordered_map<string, vector<set<int> > > m;
-	m["a"]={
-		{1, 2, 3, 4, 5},
-		{7, 8},
-		{}
-	};
-
-	int N=2;
-	for(auto itr=m.begin(); itr != m.end(); itr++){
-		cout<<criteriaRatioTwo(itr->first, itr->second, N);
-	}
-	
-
-	cout<<endl;
-	
-	return 0;
-}

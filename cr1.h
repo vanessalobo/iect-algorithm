@@ -16,26 +16,3 @@ double criteriaRatioOne(string p, vector<set<int> > v){
 	return cr1;
 }
 
-int main(){
-
-
-	unordered_map<string, vector<set<int> > > m;
-	m["a"]={
-		{2, 3, 4, 6},
-		{7, 8},
-		{}
-	};
-
-
-
-	for(auto itr=m.begin(); itr != m.end(); itr++){
-		int x=(itr->second).size();
-		cout<<" ";
-		cout<<criteriaRatioOne(itr->first, itr->second);
-	}
-	
-
-	cout<<endl;
-	
-	return 0;
-}

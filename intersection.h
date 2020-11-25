@@ -24,26 +24,3 @@ vector<int> intersection(vector<vector<int> > arrays, int* length){
 	return res;
 }
 
-int main(){
-
-
-
-	vector<vector<int> > v {
-		{1, 2, 3},
-		{2, 3, 4, 5},
-		{1, 2, 3, 4, 5, 6}
-	};
-
-	std::vector<int> res;
-	int length=0;
-	int *p=&length;
-	res=intersection(v, p);
-	cout<<length<<endl;
-	for(int i=0; i<length; i++){
-		cout<<res[i]<<" ";
-	}
-
-	cout<<endl;
-	
-	return 0;
-}

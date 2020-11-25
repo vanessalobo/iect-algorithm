@@ -1,2 +1,9 @@
-inital stack of items: check for minimum support condition
+inital stack of items: check for minimum support condition increasing order of number of vip items
 for prefix {ba}: intersection of b and a and then use the summation
+
+doubts:
+line 5: do i need to append i to P and then push it to CP?
+line 7: do i need to pop while checking all the items in stack
+what is the ordering of initial stack of elements
+which is top and which is bottom of stack
+line 5 and 12: append i to P twice??
