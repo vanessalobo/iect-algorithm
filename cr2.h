@@ -29,7 +29,7 @@ bool criteriaRatioTwo(string p, vector<set<int> > v) {
 		}
 	}
 
-	if(flag || (cr2<0)) return true;
+	if(flag || (cr2>0)) return true;
 	else return false;
 
 }

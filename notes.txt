@@ -7,3 +7,5 @@ line 7: do i need to pop while checking all the items in stack
 what is the ordering of initial stack of elements
 which is top and which is bottom of stack
 line 5 and 12: append i to P twice??
+cr2(ba) is false but it is given as true and cr2(fa) is given false when it actually is less than 0. error in cr2 should be greater than instead of less than???
+if sigma=0 divide by zero condition??
