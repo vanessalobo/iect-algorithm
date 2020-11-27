@@ -20,7 +20,9 @@ bool criteriaRatioTwo(string p, vector<set<int> > v) {
 	}
 
 	double SD= (double)sqrt(SD_square)/N;
-	double cr2 = (double) SD_cube/(SD*SD*SD*(N-1));
+	double cr2;
+	if(SD!=0) 
+		cr2 = (double) SD_cube/(SD*SD*SD*(N-1));
 	int flag=1; //to check if P is not in any of the vip groups
 	for(int i=1; i<=N; i++){
 		if(v[i].size()!=0){
@@ -29,7 +31,7 @@ bool criteriaRatioTwo(string p, vector<set<int> > v) {
 		}
 	}
 
-	if(flag || (cr2>0)) return true;
+	if(flag || (cr2 >= 0)) return true;
 	else return false;
 
 }
