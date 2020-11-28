@@ -20,8 +20,8 @@ void IECT(string P, vector<pair<string, vector<set<int> > > >& soi, double minsu
 		string X= P+tos.first;
 
 		if((criteriaRatioOne(tos.first, tos.second) <= minR) && criteriaRatioTwo(tos.first, tos.second)){
-			P=X; //????
-			CP.push_back(P);
+			//P=X; //????
+			CP.push_back(X);
 
 		}
 
@@ -83,6 +83,7 @@ int main() {
 	for(int i=0; i<CP.size(); i++){
 		cout<<CP[i]<<" ";
 	}
+	cout<<endl;
 	return 0;
 }
 
