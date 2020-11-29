@@ -3,7 +3,6 @@
 #include<stack>
 #include "cr1.h"
 #include "cr2.h"
-#include "intersection.h"
 using namespace std;
 
 //inputs: Prefix P, Stack SOI, minimum support minsup, minimum ratio minR
@@ -66,24 +65,5 @@ void IECT(string P, vector<pair<string, vector<set<int> > > >& soi, double minsu
 	}
 }
 
-int main() {
 
-	string P="";
-	vector<pair<string, vector<set<int> > > > soi;
-	soi.push_back({"a", { {1, 2, 3, 4, 5, 6}, {7}, {9} } });
-	soi.push_back({"f", { {1, 2, 4, 5, 6}, {8}, {9} } });
-	soi.push_back({"g", { {1, 2, 3, 4, 5}, {7, 8}, {} } });
-	soi.push_back({"b", { {2, 3, 4, 6}, {7, 8}, {} } }); 
-	double minsup=4.0;
-	double minR=0.4;
-	vector<string> CP;
-
-	IECT(P, soi, minsup, minR, CP);
-
-	for(int i=0; i<CP.size(); i++){
-		cout<<CP[i]<<" ";
-	}
-	cout<<endl;
-	return 0;
-}
 
