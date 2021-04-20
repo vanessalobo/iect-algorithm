@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 #include<iostream>
+
 #include "iect.h"
+#include "parsedata.h"
 
 using namespace std;
 
@@ -9,11 +11,14 @@ int main() {
 	string P="";
 
 	vector<pair<string, vector<set<int> > > > soi;
-	soi.push_back({"a", { {1, 2, 3, 4, 5, 6}, {7}, {9} } });
-	soi.push_back({"b", { {2, 3, 4, 6}, {7, 8}, {} } }); 
-	soi.push_back({"e", { {3, 4}, {8}, {} } });
-	soi.push_back({"f", { {1, 2, 4, 5, 6}, {8}, {9} } });
-	soi.push_back({"g", { {1, 2, 3, 4, 5}, {7, 8}, {} } });
+
+	create_stack_of_items(soi);
+
+	// soi.push_back({"a", { {1, 2, 3, 4, 5, 6}, {7}, {9} } });
+	// soi.push_back({"b", { {2, 3, 4, 6}, {7, 8}, {} } }); 
+	// soi.push_back({"e", { {3, 4}, {8}, {} } });
+	// soi.push_back({"f", { {1, 2, 4, 5, 6}, {8}, {9} } });
+	// soi.push_back({"g", { {1, 2, 3, 4, 5}, {7, 8}, {} } });
 
 	double minsup=4.0;
 	double minR=0.4;
@@ -28,7 +33,12 @@ int main() {
 	IECT(P, soi, minsup, minR, CP);
 
 	for(int i=0; i<CP.size(); i++){
-		cout<<CP[i]<<" ";
+		
+		for(int j=0; j<CP[i].size(); j+=5){
+			cout<<CP[i].substr(j, 5)<<" ";
+		}
+		cout<<endl;
+		//cout<<CP[i]<<" ";
 	}
 
 	cout<<endl;

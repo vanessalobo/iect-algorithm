@@ -38,6 +38,8 @@ void IECT(string P, vector<pair<string, vector<set<int> > > >& soi, double minsu
 
 			auto itr= set_intersection(current[0].begin(), current[0].end(), t2[0].begin(), t2[0].end(), inserter(vip, vip.begin()));
 
+			// auto itr= set_intersection(current[0].begin(), current[0].end(), t2[0].begin(), t2[0].end(), front_inserter(vip));
+
 			if(vip.size() >= minsup) {
 
 				std::vector<set<int> > v;
@@ -47,6 +49,8 @@ void IECT(string P, vector<pair<string, vector<set<int> > > >& soi, double minsu
 				for(int i=1; i<N; i++){
 					set<int> temp;
 					auto itr=set_intersection(current[i].begin(), current[i].end(), t2[i].begin(), t2[i].end(), inserter(temp, temp.begin()));
+
+					// auto itr=set_intersection(current[i].begin(), current[i].end(), t2[i].begin(), t2[i].end(), front_inserter(temp));
 					v.push_back(temp);
 				}
 
