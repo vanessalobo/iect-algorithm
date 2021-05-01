@@ -9,8 +9,8 @@ void create_stack_of_items(vector<pair<string, vector<set<int> > > >& soi)
 {
 	//vector<pair<string, vector<set<int> > > > soi;
 
-	string STOCKGRP="temp-data/t-stock-group.csv";
-	string STOCKTXN="temp-data/t-stock-txn.csv";
+	string STOCKGRP="data/stock-group-edit.csv";
+	string STOCKTXN="data/stock-txn-unix.csv";
 
 	// ifstream sgrp(STOCKGRP, ios::in);
 	// ifstream stxn(STOCKTXN, ios::in);
