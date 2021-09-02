@@ -77,12 +77,12 @@ void create_stack_of_items(vector<pair<string, vector<set<int> > > >& soi)
 			
 
 			do{
-				int check=0;
+			
 				getline(sstxn, txno, delim);
 				//cout<<txno<<" ";
-				if(sstxn.eof()) check=-1;
-				//if(!sstxn.eof()) 
-				group.insert(stoi(txno));
+				
+				if(!sstxn.eof()) 
+					group.insert(stoi(txno));
 				txno.clear();
 				c++;				
 
